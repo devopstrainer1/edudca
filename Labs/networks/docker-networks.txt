@@ -76,6 +76,8 @@ Managing Networks:
        docker network create NETWORK ( create a bridge network by default )   
        docker network create --driver bridge NETWORK
        docker network create --driver overlay NETWORK
+       docker network create --driver=bridge --subnet=192.168.10.0/24 --gateway=192.168.10.250 borkspace
+       
        docker network inspect NETWORK
        docker network rm NETWORK 
 	   
@@ -121,3 +123,9 @@ Host vs. Ingress
 	  
 	  publish a service port host mode:
 	    docker service create -p mode=host,published=8082,target=80 --name nginx_host_pub nginx
+===========================================================================
+
+docker run -itd --name spacebones 5f9cfb85ce71 /bin/bash 
+
+docker run -itd --name treatlist --link 6fa973bb3c26 -P /bin/bash 
+

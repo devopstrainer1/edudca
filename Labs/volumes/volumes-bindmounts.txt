@@ -65,3 +65,9 @@ Create and manage volumes using docker volume commands
   docker volume inspect myvol
   docker volume rm myvol
 ====================================================================================================================
+
+docker create -v /data --name boneyard spacebones/postgres /bin/true
+
+docker run -d --volumes-from boneyard --name cheese spacebones/postgres
+docker run -d --volumes-from boneyard --name tuna spacebones/postgres
+docker run -d --volumes-from boneyard --name bacon spacebones/postgres
