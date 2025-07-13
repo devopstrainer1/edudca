@@ -1,1 +1,1 @@
-Docker Certifacte Training Content
+Docker Certificate Training Content
