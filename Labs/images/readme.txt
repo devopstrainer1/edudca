@@ -1,4 +1,5 @@
 what are Docker Images: 
+
 =======================
 An image is a package that consists of an application and all of its dependencies to run the application in a container. 
 containers and images use a layered file system. Each layer consists only the differences from the previous layer.
