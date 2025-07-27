@@ -1,4 +1,4 @@
-Container Commands:
+Docker Container Commands:
 
 docker run -itd ubuntu /bin/bash -- enter into a container
 docker run -itd --name testubuntu ubuntu /bin/bash   -- to change the name of container
