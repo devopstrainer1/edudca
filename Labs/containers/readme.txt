@@ -1,6 +1,6 @@
 there are many docker images available on hub.docker.com, we can just pull them & start running containers
 
-	docker search <image name> -- to search the docker images from command line
+	docker search <image name> -- to search the docker images from command line  
 	docker pull <image name> -- to pull a docker image from docker hub	
 
 	docker images -- to display the images on your local machine
