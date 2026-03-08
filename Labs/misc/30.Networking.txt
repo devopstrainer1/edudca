@@ -1,13 +1,6 @@
 Containers present unique challenges when it comes to networking. Luckily, Docker includes multiple built-in solutions to these networking challenges. Docker implements container networking using a framework called the Container Networking Model. In this lesson, we will discuss the Container Networking Model and offer some high-level examples of some of the model's implementations.
 
-Relevant Documentation
-https://success.docker.com/article/networking/
-
 Docker provides multiple implementations of the Container Networking Model in the form of network drivers. 
-
-Relevant Documentation
-https://success.docker.com/article/networking/
-https://blog.docker.com/2016/12/understanding-docker-networking-drivers-use-cases/
 
 
 Host
@@ -53,4 +46,5 @@ None
 Create a container that uses the none network and demonstrate that a normal container cannot reach it.
 
 docker run --net none -d --name none_nginx nginx
+
 docker run --rm radial/busyboxplus:curl curl none_nginx:80
