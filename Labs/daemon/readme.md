@@ -6,7 +6,7 @@ Docker Daemon/Engine:
 	The Docker daemon/engine is a service that runs on your host operating system. 
 	It is primarily designed to run on Linux because it depends on a number of Linux kernel features, but there are a few waysto run Docker on MacOS and Windows too.
 
-	The Docker daemon itself exposes a REST API
+	The Docker daemon itself exposes a REST API   
 
 Docker Client:
 ==============
